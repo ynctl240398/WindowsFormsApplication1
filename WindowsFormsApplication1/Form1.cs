@@ -80,7 +80,7 @@ namespace WindowsFormsApplication1
         }
 
 
-      asd
+      
         private void cbbkichthuoc_SelectedIndexChanged(object sender, EventArgs e)
         {
             for (int i = 0; i < n; i++)
