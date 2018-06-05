@@ -13,7 +13,7 @@ namespace WindowsFormsApplication1
     public partial class Form1 : Form
     {
 
-
+        int n = 0;
         public Form1()
         {
             InitializeComponent();
@@ -44,7 +44,7 @@ namespace WindowsFormsApplication1
         {
 
             int t = cbbkichthuoc.SelectedIndex;
-            int n=0;
+           
             switch(t)
             {
                 case 0:
@@ -83,12 +83,18 @@ namespace WindowsFormsApplication1
       
         private void cbbkichthuoc_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            foreach (Control item  in this.Controls)
-             {
-                if (item is Button)
-                    this.Controls.Remove(item);
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    foreach (Control item  in this.Controls)
+                    {
+                        if (item is Button)
+                            this.Controls.Remove(item);
+                    }
+                }
             }
+            
            // this.Controls.Clear();
             drawscreen();
            
